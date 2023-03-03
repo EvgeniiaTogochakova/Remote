@@ -15,3 +15,7 @@ if (check)
   int[] pos = FindPositionElementInMatrix(matrix, findItem);
   Console.WriteLine($"row: {pos[0]}  column:{pos[1]}");
 }
+else
+{
+  System.Console.WriteLine("Нет такого");
+}
