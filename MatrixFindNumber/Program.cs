@@ -50,6 +50,7 @@ bool FindElementInMatrix(int[,] matrix, int element)
       }
     }
   }
+  return false;
 }
 
 int GetValueFromConsole(string text)
