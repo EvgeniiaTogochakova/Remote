@@ -52,6 +52,19 @@ bool FindElementInMatrix(int[,] matrix, int element)
   }
 }
 
+int GetValueFromConsole(string text)
+{
+  int value = 0;
+
+  bool flag = false;
+  while (!flag)
+  {
+    Console.Write(text);
+    int.TryParse(Console.ReadLine(), out value);
+  }
+
+  return value;
+}
 
 int[] FindPositionElementInMatrix(int[,] matrix, int element)
 {
@@ -69,9 +82,11 @@ int[] FindPositionElementInMatrix(int[,] matrix, int element)
 }
 
 Console.WriteLine("Введите, пожалуйста, число. Я создам матрицу и найду в ней позиции вашего числа");
+
 int value = int.Parse(Console.ReadLine());
 int[,] matr = new int[10, 10];
 Console.WriteLine();
 RandomMatrixPrint(matr);
 Console.WriteLine();
 FindNumberInMatrix(matr, value);
+
