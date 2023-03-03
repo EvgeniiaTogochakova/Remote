@@ -52,6 +52,22 @@ bool FindElementInMatrix(int[,] matrix, int element)
   }
 }
 
+
+int[] FindPositionElementInMatrix(int[,] matrix, int element)
+{
+  for (int i = 0; i < matrix.GetLength(0); i++)
+  {
+    for (int j = 0; j < matrix.GetLength(1); j++)
+    {
+      if (matrix[i, j] == element)
+      {
+        return new int[] { i, j };
+      }
+    }
+  }
+  return new int[] { -1, -1 };
+}
+
 Console.WriteLine("Введите, пожалуйста, число. Я создам матрицу и найду в ней позиции вашего числа");
 int value = int.Parse(Console.ReadLine());
 int[,] matr = new int[10, 10];
