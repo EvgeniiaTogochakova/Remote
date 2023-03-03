@@ -61,7 +61,7 @@ int GetValueFromConsole(string text)
   while (!flag)
   {
     Console.Write(text);
-    int.TryParse(Console.ReadLine(), out value);
+    flag = int.TryParse(Console.ReadLine(), out value);
   }
 
   return value;
