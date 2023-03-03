@@ -37,29 +37,18 @@ string PrintGood(int[,] matrix)
   return result;
 }
 
-
-
-void FindNumberInMatrix(int[,] matrix, int n)
+bool FindElementInMatrix(int[,] matrix, int element)
 {
-  string result = "";
 
   for (int i = 0; i < matrix.GetLength(0); i++)
   {
     for (int j = 0; j < matrix.GetLength(1); j++)
     {
-      if (matrix[i, j] == n)
+      if (matrix[i, j] == element)
       {
-        result += "Позиция вашего числа: строка" + $"{i} " + "столбец" + $"{j}";
-        Console.WriteLine(result);
-        break;
+        return true;
       }
     }
-  }
-
-  if (String.IsNullOrEmpty(result))
-  {
-    result += "К сожалению, в моей матрице нет вашего числа";
-    Console.WriteLine(result);
   }
 }
 
