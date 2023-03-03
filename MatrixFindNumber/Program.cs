@@ -81,12 +81,19 @@ int[] FindPositionElementInMatrix(int[,] matrix, int element)
   return new int[] { -1, -1 };
 }
 
-Console.WriteLine("Введите, пожалуйста, число. Я создам матрицу и найду в ней позиции вашего числа");
 
-int value = int.Parse(Console.ReadLine());
-int[,] matr = new int[10, 10];
-Console.WriteLine();
-RandomMatrixPrint(matr);
-Console.WriteLine();
-FindNumberInMatrix(matr, value);
+int rows = GetValueFromConsole("Строк: ");
+int columns = GetValueFromConsole("Столбиков: ");
+int findItem = GetValueFromConsole("Что ищем: ");
 
+int[,] matrix = new int[rows, columns];
+FillMatrix(matrix, 0, 10);
+Console.WriteLine(PrintGood(matrix));
+
+bool check = FindElementInMatrix(matrix, findItem);
+
+if (check)
+{
+  int[] pos = FindPositionElementInMatrix(matrix, findItem);
+  Console.WriteLine($"row: {pos[0]}  column:{pos[1]}");
+}
