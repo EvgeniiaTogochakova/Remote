@@ -1,0 +1,15 @@
+/Users/i/Developer/csharp030323/Remote/MatrixFindNumber/obj/Debug/net7.0/MatrixFindNumber.csproj.AssemblyReference.cache
+/Users/i/Developer/csharp030323/Remote/MatrixFindNumber/obj/Debug/net7.0/MatrixFindNumber.GeneratedMSBuildEditorConfig.editorconfig
+/Users/i/Developer/csharp030323/Remote/MatrixFindNumber/obj/Debug/net7.0/MatrixFindNumber.AssemblyInfoInputs.cache
+/Users/i/Developer/csharp030323/Remote/MatrixFindNumber/obj/Debug/net7.0/MatrixFindNumber.AssemblyInfo.cs
+/Users/i/Developer/csharp030323/Remote/MatrixFindNumber/obj/Debug/net7.0/MatrixFindNumber.csproj.CoreCompileInputs.cache
+/Users/i/Developer/csharp030323/Remote/MatrixFindNumber/bin/Debug/net7.0/MatrixFindNumber
+/Users/i/Developer/csharp030323/Remote/MatrixFindNumber/bin/Debug/net7.0/MatrixFindNumber.deps.json
+/Users/i/Developer/csharp030323/Remote/MatrixFindNumber/bin/Debug/net7.0/MatrixFindNumber.runtimeconfig.json
+/Users/i/Developer/csharp030323/Remote/MatrixFindNumber/bin/Debug/net7.0/MatrixFindNumber.dll
+/Users/i/Developer/csharp030323/Remote/MatrixFindNumber/bin/Debug/net7.0/MatrixFindNumber.pdb
+/Users/i/Developer/csharp030323/Remote/MatrixFindNumber/obj/Debug/net7.0/MatrixFindNumber.dll
+/Users/i/Developer/csharp030323/Remote/MatrixFindNumber/obj/Debug/net7.0/refint/MatrixFindNumber.dll
+/Users/i/Developer/csharp030323/Remote/MatrixFindNumber/obj/Debug/net7.0/MatrixFindNumber.pdb
+/Users/i/Developer/csharp030323/Remote/MatrixFindNumber/obj/Debug/net7.0/MatrixFindNumber.genruntimeconfig.cache
+/Users/i/Developer/csharp030323/Remote/MatrixFindNumber/obj/Debug/net7.0/ref/MatrixFindNumber.dll
