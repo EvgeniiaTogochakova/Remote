@@ -23,6 +23,21 @@ void Print(int[,] matrix)
 }
 
 
+string PrintGood(int[,] matrix)
+{
+  string result = String.Empty;
+  for (int i = 0; i < matrix.GetLength(0); i++)
+  {
+    for (int j = 0; j < matrix.GetLength(1); j++)
+    {
+      result += $"{matrix[i, j],5} ";
+    }
+    result += "\n";
+  }
+  return result;
+}
+
+
 
 void FindNumberInMatrix(int[,] matrix, int n)
 {
