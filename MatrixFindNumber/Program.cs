@@ -1,47 +1,21 @@
-﻿// В двумерном массиве показать позиции числа, заданного пользователем, или указать, что такого элемента нет.
+﻿using static MatrixService;
 
-void RandomMatrixPrint(int[,] matrix)
+int rows = GetValueFromConsole("Строк: ");
+int columns = GetValueFromConsole("Столбиков: ");
+int findItem = GetValueFromConsole("Что ищем: ");
+
+int[,] matrix = new int[rows, columns];
+FillMatrix(matrix, 0, 10);
+Console.WriteLine(PrintGood(matrix));
+
+bool check = FindElementInMatrix(matrix, findItem);
+
+if (check)
 {
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            matrix[i, j] = new Random().Next(0, 10);
-            Console.Write($"{matrix[i, j]} ");
-        }
-        Console.WriteLine();
-    }
+  int[] pos = FindPositionElementInMatrix(matrix, findItem);
+  Console.WriteLine($"row: {pos[0]}  column:{pos[1]}");
 }
-
-
-void FindNumberInMatrix(int[,] matrix, int n)
+else
 {
-    string result = "";
-    
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {            
-            if (matrix[i,j] == n)
-            {
-                result += "Позиция вашего числа: строка" + $"{i} " + "столбец"  + $"{j}";
-                Console.WriteLine(result);
-                break;
-            }
-        }
-    }
-    
-    if (String.IsNullOrEmpty(result)) 
-    {
-        result += "К сожалению, в моей матрице нет вашего числа";
-        Console.WriteLine(result);
-    }
+  System.Console.WriteLine("Нет такого");
 }
-
-Console.WriteLine("Введите, пожалуйста, число. Я создам матрицу и найду в ней позиции вашего числа");
-int value = int.Parse(Console.ReadLine());
-int[,] matr = new int[10,10];
-Console.WriteLine();
-RandomMatrixPrint(matr);
-Console.WriteLine();
-FindNumberInMatrix(matr, value);
